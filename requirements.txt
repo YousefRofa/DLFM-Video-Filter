@@ -1,0 +1,4 @@
+javabridge~=1.0.20
+opencv-python~=4.11.0.86
+tifffile~=2025.6.1
+numpy~=1.26.4
