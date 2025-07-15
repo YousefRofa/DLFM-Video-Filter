@@ -1,2 +1,5 @@
-{"Lowered Gaussian":  {"Standard Deviation": 2.5},
-"Averaging Filter":  {"Kernal": 7}}
+{"Lowered Gaussian":  {"Standard Deviation": 2},
+"Averaging Filter":  {"Kernal": 7},
+  "Difference in Average Filter": {"Kernal1":  3, "Kernal2":  5},
+  "Difference in Gaussian Filter": {"Standard Deviation1":  1, "Standard Deviation2":  1.6},
+  "Median Filter":  {"Kernal":  3}}
