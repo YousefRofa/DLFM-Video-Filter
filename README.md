@@ -7,9 +7,7 @@ The code can be run through [main.py](main.py) and all the dependencies and libr
 
 The paramaters of the filters (eg. standard deviation and kernal size) can be modified through [settings.json](settings.json).
 ### Notes:
-- A Conda Environment is needed for running the code.
-The environment is located in the [environment.yml](environment.yml) file and instructions on how to install conda can be found
-[here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) and instructions on activating the environment can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
--JDK and JRE need to be installed
+- A Virtual Environment is needed for running the code.
+The environment is located in the [requirements.txt](requirements.txt) file.
 - If you face issues due to numpy being incompatible with bioformats, uninstall numpy then reinstall numpy==1.26.4 instead.
-- Only .cxd video extension have been tested using this code.
+- Only .avi video extension have been tested using this code. Data has to be of this extension to be used by the code.

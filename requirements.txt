@@ -1,0 +1,4 @@
+tifffile~=2025.6.11
+future~=1.0.0
+opencv-python~=4.11.0.86
+numpy~=1.26.4

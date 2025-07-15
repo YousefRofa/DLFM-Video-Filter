@@ -1,18 +1,9 @@
-import rawpy
-import os
-import cv2
-import matplotlib.pyplot as plt
 from pathlib import Path
 import tifffile as tiff
-from tqdm import tqdm                  # progress bar
-import numpy as np
 from filters import *
-# filePath = filedialog.askopenfilename()
 from tkinter import filedialog
 
-
-# filePath = filedialog.askopenfilename()
-filePath = "data.avi"
+filePath = filedialog.askopenfilename()
 cap = cv2.VideoCapture(filePath)
 
 frames = []
@@ -48,7 +39,7 @@ cv2.destroyAllWindows()
 stack = np.stack(frames)
 
 tiff.imwrite(
-    Path(filePath).stem+"_"+".ome.tiff",
+    Path(filePath).stem+"_FILTERS"+".ome.tiff",
     stack,
     photometric='minisblack',
     metadata={'axes': 'TYX'},# T: time, YX: spatial
